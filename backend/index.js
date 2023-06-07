@@ -10,7 +10,7 @@ const Port = 4000
 
 app.use(bodyParser.json({extended : true}))
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(cors())
+app.use(cors({origin: 'http://webFast.onrender.com'}));
 app.use('/' , router)
 
 //"mongodb+srv://muqadus:12345@cluster0.77er7ma.mongodb.net/"
